@@ -51,7 +51,24 @@ int main() {
     printf("\n\n");
 
 
+    // CAVALO:
+    printf("MOVIMENTAÇÃO DO CAVALO, 2 CASA PARA BAIXO, 1 PARA ESQUERDA:\n");
+    for(int pos = 0; pos <= 2; ++pos){
 
+        // VERIFICA SE HOUVE 2 REPETIÇÕES
+        if(pos <= 1){
+            printf("BAIXO\n");
+        }else{
+
+            // CASO TEVE DUAS REPETIÇÕES, COMEÇA AS MOVIMENTAÇÕES À ESQUERDA
+            int cavalo = 1;
+            while(cavalo < 2){
+                printf("ESQUERDA\n");
+
+                cavalo++;
+            }
+        }
+    }
 
     return 0;
 }
