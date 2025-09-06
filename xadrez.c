@@ -1,32 +1,59 @@
 #include <stdio.h>
 
-// Desafio de Xadrez - MateCheck
-// Este código inicial serve como base para o desenvolvimento do sistema de movimentação das peças de xadrez.
-// O objetivo é utilizar estruturas de repetição e funções para determinar os limites de movimentação dentro do jogo.
 
 int main() {
-    // Nível Novato - Movimentação das Peças
-    // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
 
-    // Implementação de Movimentação do Bispo
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação do Bispo em diagonal.
+    /*
+        TORRE: 
+            - Se movimentar 5x à direita
 
-    // Implementação de Movimentação da Torre
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Torre para a direita.
+        BISPO:
+            - Se movimentar diagonalmente 5x Pracima e direita
 
-    // Implementação de Movimentação da Rainha
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Rainha para a esquerda.
+        RAINHA:
+            - Se movimentar 8x para esquerda
 
-    // Nível Aventureiro - Movimentação do Cavalo
-    // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
-    // Um loop pode representar a movimentação horizontal e outro vertical.
+        CAVALO:
+            - Se movimentar 2 casas para baixo, 1 para esquerda
+    */
 
-    // Nível Mestre - Funções Recursivas e Loops Aninhados
-    // Sugestão: Substitua as movimentações das peças por funções recursivas.
-    // Exemplo: Crie uma função recursiva para o movimento do Bispo.
 
-    // Sugestão: Implemente a movimentação do Cavalo utilizando loops com variáveis múltiplas e condições avançadas.
-    // Inclua o uso de continue e break dentro dos loops.
+
+    // TORRE:
+    printf("MOVIMENTAÇÃO DA TORRE, 5 CASAS PARA DIREITA:\n");
+    // LOOPING QUE DETERMINA A POSIÇÃO DA TORRE
+    for(int pos = 1; pos < 5; ++pos){
+
+        printf("DIREITA\n");
+    }
+    printf("TORRE\n");
+    printf("\n\n");
+
+
+    // BISPO:
+    printf("MOVIMENTAÇÃO DO BISPO, DIAGONALMENTE 5X PARA CIMA E DIREITA:\n");
+    int pos = 1;
+    while(pos < 5){
+        printf("CIMA DIREITA\n");
+        pos++;
+    }
+    printf("BISPO\n");
+    printf("\n\n");
+
+
+
+    // RAINHA:
+    printf("MOVIMENTAÇÃO DO RAINHA, 8 CASAS PARA ESQUERDA:\n");
+    for(int pos = 7; pos >= 1; --pos){
+        printf("ESQUERDA\n");
+    }
+    printf("RAINHA\n");
+    printf("\n\n");
+
+
+
 
     return 0;
 }
+
+
